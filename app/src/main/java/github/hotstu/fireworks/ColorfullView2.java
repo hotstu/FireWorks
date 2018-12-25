@@ -6,7 +6,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
-import android.os.SystemClock;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
@@ -17,9 +16,6 @@ import android.view.View;
 import java.util.ArrayList;
 
 
-/**
- * Created by hotstuNg on 2016/8/29.
- */
 
 public class ColorfullView2 extends View  {
     private static final String TAG = "ColorfullView";
@@ -65,7 +61,6 @@ public class ColorfullView2 extends View  {
         return mGesture.onTouchEvent(event);
     }
 
-    long counter = SystemClock.elapsedRealtime();
     @Override
     protected void onDraw(Canvas canvas) {
         //enableHardwareLayer(this);

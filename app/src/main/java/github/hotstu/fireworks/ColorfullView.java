@@ -20,9 +20,6 @@ import android.view.View;
 import java.util.ArrayList;
 
 
-/**
- * Created by hotstuNg on 2016/8/29.
- */
 
 public class ColorfullView extends View  {
     private static final String TAG = "ColorfullView";

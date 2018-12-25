@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
-import android.os.SystemClock;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
@@ -58,7 +57,6 @@ public class ColorfullView1 extends View  {
         return mGesture.onTouchEvent(event);
     }
 
-    long counter = SystemClock.elapsedRealtime();
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
@@ -69,7 +67,6 @@ public class ColorfullView1 extends View  {
                 fireworks.remove(i);
             }
         }
-        //canvas.drawBitmap(canvasBitmap,0, 0, mBitmapPaint);
         if (!fireworks.isEmpty()) {
             ViewCompat.postInvalidateOnAnimation(this);
         }
